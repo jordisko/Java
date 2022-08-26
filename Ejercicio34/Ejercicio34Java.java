@@ -12,6 +12,6 @@ public class Ejercicio34Java {
 class Employee {
 	private float salary;
 }
-class Programmer {
+class Programmer extends Employee {
 	private int bonus;
 }
