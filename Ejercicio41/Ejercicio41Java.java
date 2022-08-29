@@ -8,17 +8,18 @@ public class Ejercicio41Java {
 		String unouno=" ",dosuno=" ",tresuno=" ",unodos=" ",dosdos=" ",tresdos=" ",unotres=" ",dostres=" ",trestres=" " ;
 		
 		String introduccion ="Esto es una partida de 3 en ralla. \n";
-		String partida= "| |1|2|3|\n|1|"+unouno+"|"+dosuno+"|"+tresuno+"|\n|2|"+unodos+"|"+dosdos+"|"+tresdos+"|\n|3|"+unotres+"|"+dostres+"|"+trestres+"|\n";
-		String instruccioninicial="Jugador X. ingresa las cordenadas (xy) para colocar la pieza.";
+		String partida= "| |1|2|3|\n|1|"+unouno+"|"+dosuno+"|"+tresuno+"|\n|2|"+unodos+"|"+dosdos+"|"+tresdos+"|\n|3|"+unotres+"|"+dostres+"|"+trestres+"|\n";	
 		int turno=0;
-		String xoy="";
+		String xoy="X";
 		String instruccioninicialxoy="Jugador "+xoy+ ". ingresa las cordenadas (xy) para colocar la pieza.";
-		if (turno<=8);{
+		while (turno<=8){
 			if (turno==0 | turno%2==0) {
 				xoy ="X";}
 			else {
 				xoy="Y";
 			}
+			partida= "| |1|2|3|\n|1|"+unouno+"|"+dosuno+"|"+tresuno+"|\n|2|"+unodos+"|"+dosdos+"|"+tresdos+"|\n|3|"+unotres+"|"+dostres+"|"+trestres+"|\n";
+			instruccioninicialxoy="Jugador "+xoy+ ". ingresa las cordenadas (xy) para colocar la pieza.";
 			InputStream inputStream= System.in;
 			System.out.println(introduccion+partida+ instruccioninicialxoy);
 			Scanner s0 = new Scanner (inputStream);
@@ -62,7 +63,6 @@ public class Ejercicio41Java {
 				break;
 
 			}
-			
 			turno++;
 		}
 		
