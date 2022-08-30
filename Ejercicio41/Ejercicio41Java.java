@@ -12,7 +12,7 @@ public class Ejercicio41Java {
 		int turno=0;
 		String xoy="X";
 		String instruccioninicialxoy="Jugador "+xoy+ ". ingresa las cordenadas (xy) para colocar la pieza.";
-		while (turno<=8){
+		while (turno<=9){
 			if (turno==0 | turno%2==0) {
 				xoy ="X";}
 			else {
@@ -66,7 +66,7 @@ public class Ejercicio41Java {
 			turno++;
 		}
 		
-		
+	System.out.println("La partida ha acabado :)");	
 		
 	}	
 
